@@ -12,6 +12,7 @@ while [ 1 ]; do
 	if [ "$ITUNESINFO" != "$CURRENTTRACK" ] ; then
 		clear
 		CURRENTTRACK=$ITUNESINFO
+    echo "iTunes currently playing:"
 		echo $CURRENTTRACK
 	fi
 	sleep 5
