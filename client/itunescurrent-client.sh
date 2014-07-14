@@ -1,9 +1,6 @@
 #!/bin/bash
-SERVERIP=192.168.1.103
-if [ $# -eq 1 ] ; then
-	SERVERIP=$1
-fi
-SERVERPORT=4321
+[[ "$1" = "" ]] && SERVERIP=192.168.1.108 || SERVERIP=$1
+[[ "$2" = "" ]] && SERVERPORT=4321 || SERVERPORT=$2
 CURRENTTRACK=""
 ITUNESINFO=""
 while [ 1 ]; do
